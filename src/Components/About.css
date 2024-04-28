@@ -1,0 +1,39 @@
+.AboutPage{
+    margin-inline: 40px;
+}
+
+@media (max-width: 1200px) {
+    .AboutMeText{
+        font-size: 30px;
+    }
+    
+  }
+
+  @media (max-width: 900px) {
+    .AboutMeText{
+        font-size: 30px;
+    }
+  }
+  @media (max-width: 750px) {
+    .AboutDiv1btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .AboutMeText{
+    text-align: center;
+    margin-left: 24px;
+    font-size: 25px;
+
+    }
+    .AboutDiv2tech{
+        margin: auto;
+    }
+    .AboutDiv1heading{
+        font-weight: 700;
+    }
+  }
+

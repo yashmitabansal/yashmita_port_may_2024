@@ -1,0 +1,28 @@
+@media (max-width: 700px) {
+  .FooterDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+  .FooterYashmita {
+    font-weight: 300;
+    font-size: medium;
+  }
+  .FooterIcon {
+    width: 20px;
+  }
+  .FooterIconDiv {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+   
+    .FooterYashmita {
+      font-weight: 300;
+      font-size: medium;
+      color: #0B001A;
+    }
+    .FooterLastText{
+        font-size: small;
+    }
+   
+  }

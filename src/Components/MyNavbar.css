@@ -1,0 +1,13 @@
+@media (max-width: 1202px) {
+  .navbarText {
+    font-weight: 200;
+    font-size: medium;
+  }
+}
+@media (max-width: 700px) {
+  .NavbarYashmita {
+    font-size: medium;
+  }
+
+ 
+}
