@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import img1 from "../Images/Frame 3762.png";
 import './Footer.css';
 const Footer = () => {

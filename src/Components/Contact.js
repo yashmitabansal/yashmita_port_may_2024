@@ -1,8 +1,45 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+// import { send } from "emailjs-com";
 import Resume from "../Images/yashmita.jpg";
 import './Contact.css'
 const Contact = () => {
+  const [Name, setname] = useState("");
+  const [Email, setemail] = useState("");
+  const [Message, setmsg] = useState("");
+  const [Subject, setsubject] = useState("");
+  const form = useRef();
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    const name = Name;
+    const email = Email;
+    const message = Message;
+    const subject =Subject;
+
+    if (!name || !email || !message || !subject) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    try {
+      const result = await emailjs.sendForm(
+        "service_wobu5re",
+        "template_pltmt18",
+        form.current,
+        "yxEZAFgr48N5RFZXC"
+      );
+      console.log(result.text);
+      alert("Message sent successfully!");
+      form.current.reset();
+    } catch (error) {
+      console.log(error.text);
+      alert("Error sending message. Please try again later.");
+    }
+  };
+
+
   return (
     <div>
       <div className="relative flex items-top justify-center min-h-screen dark:bg-gray-900 sm:items-center sm:pt-0">
@@ -98,35 +135,45 @@ const Contact = () => {
                 </div>
               </div>
 
-              <form className="p-6 flex flex-col justify-center">
+              <form  ref={form}
+              onSubmit={sendEmail}
+              id="contactForm"
+              style={{ fontFamily: "Nanum Myeongjo, serif" }} 
+              className="p-6 flex flex-col justify-center">
                 <div className="flex flex-col">
-                  <label for="name" className="hidden">
+                  <label htmlFor="user_name" className="hidden">
                     Full Name
                   </label>
                   <input
                     type="name"
-                    name="name"
+                    name="user_name"
                     id="name"
                     placeholder="Full Name"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    onChange={(e) => {
+                      setname(e.target.value);
+                    }}
                   />
                 </div>
 
                 <div className="flex flex-col mt-2">
-                  <label for="email" className="hidden">
+                  <label htmlFor="user_email" className="hidden">
                     Email
                   </label>
                   <input
                     type="email"
-                    name="email"
+                    name="user_email"
                     id="email"
                     placeholder="Email"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    onChange={(e) => {
+                      setemail(e.target.value);
+                    }}
                   />
                 </div>
 
                 <div className="flex flex-col mt-2">
-                  <label for="subject" className="hidden">
+                  <label htmlFor="subject" className="hidden">
                     Subject
                   </label>
                   <input
@@ -135,11 +182,14 @@ const Contact = () => {
                     id="subject"
                     placeholder="Enter your subject"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    onChange={(e) => {
+                      setsubject(e.target.value);
+                    }}
                   />
                 </div>
 
                 <div className="flex flex-col mt-2">
-                  <label for="message" className="hidden">
+                  <label htmlFor="message" className="hidden">
                     Message
                   </label>
                   <textarea
@@ -148,11 +198,15 @@ const Contact = () => {
                     id="message"
                     placeholder="Type your message"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    onChange={(e) => {
+                      setmsg(e.target.value);
+                    }}
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
+                  value="Submit"
                   className="md:w-32 bg-[#8F33F0] border-2  text-white font-bold py-3 px-6  mt-3 hover:bg-[#18092F] hover:border-2 border-[#8F33F0] rounded-xl text-lg"
                 >
                   Submit

@@ -1,6 +1,6 @@
 import React from 'react'
-import Web from "../Images/c1.jpg";
-import { PData } from "./ProjectData";
+// import Web from "../Images/c1.jpg";
+// import { PData } from "./ProjectData";
 // import './Card.css';
 import { Card } from 'flowbite-react';
 import { NavLink } from 'react-router-dom';
