@@ -1,23 +1,23 @@
 import React from 'react'
 import img2 from '../Images/Frame 3762.png'
-import { NavLink } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Error from './Error';
-import Projects from './Projects';
+// import { NavLink } from 'react-router-dom';
+// import Home from './Home';
+// import About from './About';
+// import Contact from './Contact';
+// import Error from './Error';
+// import Projects from './Projects';
 import './MyNavbar.css'
 import {
     Avatar,
     Dropdown,
-    DropdownDivider,
-    DropdownHeader,
-    DropdownItem,
+    // DropdownDivider,
+    // DropdownHeader,
+    // DropdownItem,
     Navbar,
-    NavbarBrand,
-    NavbarCollapse,
-    NavbarLink,
-    NavbarToggle,
+    // NavbarBrand,
+    // NavbarCollapse,
+    // NavbarLink,
+    // NavbarToggle,
   } from "flowbite-react";
 
 const MyNavbarPage = () => {

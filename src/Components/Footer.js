@@ -15,7 +15,7 @@ const Footer = () => {
               <span class="self-center text-xl whitespace-nowrap dark:text-white FooterYashmita">
                 Yashmita Bansal
               </span>
-            </div>
+            </div>~
             <div class="flex mt-4 space-x-3 sm:justify-center sm:mt-0 FooterIconDiv">
               <a
                 href="https://twitter.com/yashmita_bansal"

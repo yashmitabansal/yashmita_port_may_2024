@@ -2,7 +2,7 @@ import Todo from "../Images/Y5.png";
 import Face from "../Images/Y3.png";
 import Food from "../Images/Y2.png";
 import Port1 from "../Images/Y1.png";
-import Aweb from "../Images/Y4.png";
+// import Aweb from "../Images/Y4.png";
 import Quote from "../Images/Y8.png"
 import Poke from "../Images/Y6.png";
 
