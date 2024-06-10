@@ -104,7 +104,7 @@ const Home = () => {
               className="imgAnimation h-[474px] flex-1 relative rounded-298xl max-w-full overflow-hidden object-cover z-[1]"
               loading="lazy"
               id=""
-              alt="Image"
+              alt=""
             />
           </div>
         </div>
