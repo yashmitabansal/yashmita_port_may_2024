@@ -23,35 +23,68 @@ import {
 const MyNavbarPage = () => {
     return (
         <div>
-        <Navbar fluid className=" bg-[#18092F] border-0 rounded-lg ">
-        <Navbar.Brand>
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white NavbarYashmita">Yashmita Bansal</span>
-        </Navbar.Brand>
-        <div className="flex md:order-2">
-          <Dropdown
-            arrowIcon={false}
-            inline
-            label={
-              <Avatar alt="User settings" img={img2} rounded />
-            }
-          >
-            <Dropdown.Header>
-              <span className="block text-sm">Yashmita Bansal</span>
-              <span className="block truncate text-sm font-medium">yashmitabansal@gmail.com</span>
-            </Dropdown.Header>
-           
-          </Dropdown>
-          <Navbar.Toggle />
+        <div className='hidden md:block'>
+          <Navbar fluid className=" bg-[#18092F] border-0 rounded-lg ">
+            <Navbar.Brand>
+              <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white NavbarYashmita">Yashmita Bansal</span>
+            </Navbar.Brand>
+            <div className="flex">
+              <Dropdown
+                arrowIcon={false}
+                inline
+                label={
+                  <Avatar alt="User settings" img={img2} rounded />
+                }
+              >
+                <Dropdown.Header>
+                  <span className="block text-sm">Yashmita Bansal</span>
+                  <span className="block truncate text-sm font-medium">yashmitabansal@gmail.com</span>
+                </Dropdown.Header>
+              
+              </Dropdown>
+              <Navbar.Toggle />
+            </div>
+            <Navbar.Collapse className='NavbarTextDiv text-left'>
+              <Navbar.Link href="/" aria-current="page" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:font-semibold hover:text-black navbarText'  >
+                Home
+              </Navbar.Link>
+              <Navbar.Link href="/About" className='text-white  transition ease-in-out duration-300 hover:font-semibold hover:scale-110 text-xl hover:text-black navbarText'>About</Navbar.Link>
+              <Navbar.Link href="/Projects" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Projects</Navbar.Link>
+              <Navbar.Link href="/Contact" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Contact</Navbar.Link>
+            </Navbar.Collapse>
+          </Navbar>
         </div>
-        <Navbar.Collapse className='NavbarTextDiv'>
-          <Navbar.Link href="/" aria-current="page" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:font-semibold hover:text-black navbarText'  >
-            Home
-          </Navbar.Link>
-          <Navbar.Link href="/About" className='text-white  transition ease-in-out duration-300 hover:font-semibold hover:scale-110 text-xl hover:text-black navbarText'>About</Navbar.Link>
-          <Navbar.Link href="/Projects" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Projects</Navbar.Link>
-          <Navbar.Link href="/Contact" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Contact</Navbar.Link>
-        </Navbar.Collapse>
-      </Navbar>
+        <div className='block md:hidden'>
+          <Navbar fluid className=" bg-[#18092F] border-0 rounded-lg ">
+                <div>
+                  <div className="w-full">
+                  <Dropdown
+                    arrowIcon={false}
+                    inline
+                    label={
+                      <Avatar alt="User settings" img={img2} rounded />
+                    }
+                  >
+                    <Dropdown.Header>
+                      <span className="block text-sm">Yashmita Bansal</span>
+                      <span className="block truncate text-sm font-medium">yashmitabansal@gmail.com</span>
+                    </Dropdown.Header>
+                  
+                  </Dropdown>
+                  <Navbar.Toggle />
+                </div>
+              </div>
+              <Navbar.Collapse className='NavbarTextDiv'>
+                <Navbar.Link href="/" aria-current="page" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:font-semibold hover:text-black navbarText'  >
+                  Home
+                </Navbar.Link>
+                <Navbar.Link href="/About" className='text-white  transition ease-in-out duration-300 hover:font-semibold hover:scale-110 text-xl hover:text-black navbarText'>About</Navbar.Link>
+                <Navbar.Link href="/Projects" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Projects</Navbar.Link>
+                <Navbar.Link href="/Contact" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Contact</Navbar.Link>
+              </Navbar.Collapse>
+          </Navbar>
+        </div>
+        
         </div>
     )
 }

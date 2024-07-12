@@ -23,6 +23,20 @@
     }
     .FooterLastText{
         font-size: small;
+        text-align: center;
+    }
+   
+  }
+  @media (max-width: 300px) {
+   
+    .FooterYashmita {
+      font-weight: 300;
+      font-size: medium;
+      color: #0B001A;
+    }
+    .FooterLastText{
+        font-size: small;
+        text-align: center;
     }
    
   }

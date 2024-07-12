@@ -8,17 +8,17 @@ const About = () => {
       <div className=" body-font divide-y divide-gray-700">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col ">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-            <p className="font-medium text-white AboutMeText sm:text-center sm:text-3xl md:text-3xl sm:ml-16">
+            <p className="font-medium text-white AboutMeText sm:text-left sm:text-3xl md:text-3xl">
               {" "}
               About me
             </p>
           </div>
-          <div className="lg:flex-grow md:w-3/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className="lg:flex-grow md:w-3/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left sm:text-left">
             <h1 className="title-font sm:text-4xl  md:text-3xl  mb-4 font-normal text-white AboutDiv1heading">
               I am a front-end developer based in India. Has Computer Science
               Engineering background.
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed ">
               I am a front-end developer based in India looking for exciting
               opportunities. Has Computer Science Engineering Currently, I’m
               seeking an internship opportunity to further enhance my expertise
@@ -28,23 +28,12 @@ const About = () => {
               am not programming, I enjoy Reading Books, Mandala Art. Learning
               more to improve skills.
             </p>
-            <div className="w-[405px] flex flex-row items-start justify-between AboutDiv1btn">
+            <div className="w-[405px] flex flex-row items-start justify-between AboutDiv1btn ">
               <button className="inline-flex text-white bg-[#8F33F0] border-2 py-2 px-6 focus:outline-none hover:bg-[#18092F] hover:border-2 border-[#8F33F0] rounded-xl text-lg">
                 <a href={Resume} className="inline-flex " download>
                   Download Resume
                   <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-5 h-5 mt-1 ml-3"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M11.47 2.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1-1.06 1.06l-3.22-3.22V16.5a.75.75 0 0 1-1.5 0V4.81L8.03 8.03a.75.75 0 0 1-1.06-1.06l4.5-4.5ZM3 15.75a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                  <svg class="h-6 w-6 text-white"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />  <polyline points="7 11 12 16 17 11" />  <line x1="12" y1="4" x2="12" y2="16" /></svg>
                   </span>
                 </a>
               </button>
@@ -122,11 +111,11 @@ const About = () => {
 
         <div className="container mx-auto flex py-24 md:flex-row flex-col min-w-full">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 md:mb-0 mb-10 AboutDiv2">
-            <p className="font-medium text-white sm:text-3xl md:text-3xl sm:text-center AboutMeText">
+            <p className="font-medium text-white sm:text-3xl md:text-3xl sm:text-left AboutMeText">
               My Capabilities
             </p>
           </div>
-          <div className="lg:flex-grow  md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
+          <div className="lg:flex-grow  md:pl-16 flex flex-col md:items-start md:text-left items-center sm:text-left ">
             <p className="mb-8 leading-relaxed">
               I am always looking to add more skills. Fluent in DSA, Full-Stack
               web development, C, C++, Java, DBMS, and OOPs concepts – Let's

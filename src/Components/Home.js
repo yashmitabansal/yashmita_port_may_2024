@@ -6,13 +6,13 @@ const Home = () => {
   return (
     <div className="container-fluid">
       <div>
-        <div className="col-10 mx-auto   homeContent  ">
+        <div className="col-10 mx-auto homeContent  ">
           <div className="col-md-6 pt-5  ">
-            <p className="self-center whitespace-nowrap text-3xl font-semibold dark:text-white mb-3">
+            <p className="self-center whitespace-nowrap text-2xl md:text-3xl font-semibold dark:text-white mb-3">
               Hi, I'am Yashmita Bansal
             </p>
             <div className="container">
-              <span className=" text SecText text-4xl font-semibold">
+              <span className=" text SecText text-2xl md:text-4xl font-semibold">
                 {" "}
                 React Developer{" "}
               </span>

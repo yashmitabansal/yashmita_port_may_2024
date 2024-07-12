@@ -8,14 +8,13 @@ const Cards = (props) => {
     return (
         <div>
         <Card
-        className="max-w-sm bg-[#18092F]"
-        imgAlt="Meaningful alt text for an image that is not purely decorative"
-        imgSrc={props.imgsrc}
+        className="max-w-sm bg-[#18092F] "
       >
+        <img src={props.imgsrc} alt="Meaningful alt text for  that is not purely decorative" className='h-48'/>
         <h5 className="text-2xl font-bold tracking-tight text-white dark:text-white">
         {props.title}
         </h5>
-        <p className="font-normal text-white dark:text-gray-400">
+        <p className="font-normal text-white dark:text-gray-400 line-clamp-3">
         {props.description}
         </p>
 
