@@ -1,11 +1,6 @@
 import React from 'react'
 import img2 from '../Images/Frame 3762.png'
-// import { NavLink } from 'react-router-dom';
-// import Home from './Home';
-// import About from './About';
-// import Contact from './Contact';
-// import Error from './Error';
-// import Projects from './Projects';
+
 import './MyNavbar.css'
 import {
     Avatar,
@@ -26,9 +21,9 @@ const MyNavbarPage = () => {
         <div className='hidden md:block'>
           <Navbar fluid className=" bg-[#18092F] border-0 rounded-lg ">
             <Navbar.Brand>
-              <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white NavbarYashmita">Yashmita Bansal</span>
+              <span className="whitespace-nowrap text-xl font-semibold dark:text-white NavbarYashmita">Yashmita Bansal</span>
             </Navbar.Brand>
-            <div className="flex">
+            <div>
               <Dropdown
                 arrowIcon={false}
                 inline
@@ -44,7 +39,7 @@ const MyNavbarPage = () => {
               </Dropdown>
               <Navbar.Toggle />
             </div>
-            <Navbar.Collapse className='NavbarTextDiv text-left'>
+            <Navbar.Collapse className='text-left'>
               <Navbar.Link href="/" aria-current="page" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:font-semibold hover:text-black navbarText'  >
                 Home
               </Navbar.Link>
@@ -54,10 +49,9 @@ const MyNavbarPage = () => {
             </Navbar.Collapse>
           </Navbar>
         </div>
-        <div className='block md:hidden'>
+        <div className='block md:hidden'  >
           <Navbar fluid className=" bg-[#18092F] border-0 rounded-lg ">
-                <div>
-                  <div className="w-full">
+                  <div>
                   <Dropdown
                     arrowIcon={false}
                     inline
@@ -73,14 +67,14 @@ const MyNavbarPage = () => {
                   </Dropdown>
                   <Navbar.Toggle />
                 </div>
-              </div>
-              <Navbar.Collapse className='NavbarTextDiv'>
-                <Navbar.Link href="/" aria-current="page" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:font-semibold hover:text-black navbarText'  >
+              
+              <Navbar.Collapse>
+                <Navbar.Link href="/" aria-current="page" className='text-white text-xl transition ease-in-out duration-300 hover:scale-105 hover:font-semibold hover:text-black navbarText'  >
                   Home
                 </Navbar.Link>
-                <Navbar.Link href="/About" className='text-white  transition ease-in-out duration-300 hover:font-semibold hover:scale-110 text-xl hover:text-black navbarText'>About</Navbar.Link>
-                <Navbar.Link href="/Projects" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Projects</Navbar.Link>
-                <Navbar.Link href="/Contact" className='text-white text-xl transition ease-in-out duration-300 hover:scale-110 hover:text-black hover:font-semibold navbarText'>Contact</Navbar.Link>
+                <Navbar.Link href="/About" className='text-white text-xl transition ease-in-out duration-300 hover:scale-105 hover:font-semibold hover:text-black navbarText'  >About</Navbar.Link>
+                <Navbar.Link href="/Projects"className='text-white text-xl transition ease-in-out duration-300 hover:scale-105 hover:font-semibold hover:text-black navbarText'  >Projects</Navbar.Link>
+                <Navbar.Link href="/Contact" className='text-white text-xl transition ease-in-out duration-300 hover:scale-105 hover:font-semibold hover:text-black navbarText'  >Contact</Navbar.Link>
               </Navbar.Collapse>
           </Navbar>
         </div>
